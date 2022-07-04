@@ -1,0 +1,14 @@
+   _G.on = 1
+    while _G.on == 1
+    do
+
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight1"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight2"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight3"})
+        game:GetService("RunService").RenderStepped:wait()
+        game.ReplicatedStorage.RemoteEvent:FireServer({"Weight","Weight4"})
+        game:GetService("RunService").RenderStepped:wait()
+        
+    end
